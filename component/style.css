@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+input, select, button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+select {
+    -webkit-appearance: none; /* Menghilangkan panah di browser berbasis WebKit (Chrome, Safari, dll.) */
+    -moz-appearance: none; /* Menghilangkan panah di Firefox */
+    appearance: none; /* Menghilangkan panah di browser modern lainnya */
+    background: none; /* Menghilangkan background panah */
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.3); /* Warna semi-transparan */
+    backdrop-filter: blur(10px); /* Efek blur pada background */
+    border-radius: 35px; /* Border radius */
+    padding: 20px; /* Jarak konten ke tepi */
+    max-width: 400px; /* Lebar maksimal */
+    margin: 0 auto; /* Center secara horizontal */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow untuk efek kedalaman */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 35px; /* Border radius */
+    box-sizing: border-box;
+    outline: none; /* Menghilangkan outline default pada fokus */
+    transition: border 0.3s ease; /* Animasi transisi */
+}
+
+input:focus, select:focus {
+    border: 1px solid transparent; /* Menghilangkan border saat input aktif */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Tambahkan sedikit shadow agar ada efek fokus */
+}
+
+.button-container {
+    display: flex; /* Menggunakan Flexbox */
+    justify-content: center; /* Mengatur agar konten di dalam container berada di tengah secara horizontal */
+    align-items: center; /* Mengatur agar konten di dalam container berada di tengah secara vertikal (opsional jika ingin vertikal juga) */
+    height: 100px; /* Menyesuaikan tinggi container agar tombol berada di tengah halaman penuh */
+}
+
+.btn-khodam {
+    background-color: white; /* Warna dasar tombol putih */
+    color: #333; /* Warna teks abu gelap */
+    padding: 10px 20px; /* Padding untuk ukuran tombol yang proporsional */
+    border: none; /* Menghilangkan border default */
+    border-radius: 35px; /* Border radius untuk sudut melengkung */
+    font-size: 16px; /* Ukuran font */
+    cursor: pointer; /* Pointer saat hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow untuk efek kedalaman */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Animasi transisi untuk hover */
+    width: auto; /* Mengatur lebar otomatis sesuai dengan isi */
+    display: inline-block; /* Memastikan ukuran menyesuaikan dengan teks */
+}
+
+.btn-khodam:hover {
+    background-color: #f0f0f0; /* Warna lebih gelap saat hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Shadow lebih besar saat hover */
+}
+
+.btn-khodam:active {
+    background-color: #e0e0e0; /* Warna lebih gelap saat ditekan */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow lebih kecil saat ditekan */
+}
+
+.hasil-box {
+    background-color: rgba(255, 255, 255, 0.3); /* Warna latar belakang semi-transparan */
+    backdrop-filter: blur(10px); /* Efek blur pada background */
+    border-radius: 10px; /* Sudut yang melengkung */
+    padding: 20px; /* Jarak dalam box */
+    margin-top: 20px; /* Jarak dari elemen atasnya */
+    font-weight: bold; /* Teks tebal */
+    text-align: center; /* Teks berada di tengah */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow untuk efek kedalaman */
+}
+
